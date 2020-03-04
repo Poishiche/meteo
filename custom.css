@@ -1,0 +1,96 @@
+*{
+    --couleur1: #313335;
+    --couleur2: #498ece;
+    --couleur3: #0cbedd;
+    --couleur4: #edf0f3;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 0px;
+    color: var(--couleur4);
+    background-color: var(--couleur1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: var(--couleur2);
+    min-height: 35px;
+    display: flex;
+}
+
+main{
+    margin: 15px;
+}
+
+h2, .search-bar{
+    margin: 10px 0px;
+}
+
+input{
+    min-height: 20px;
+}
+
+footer{
+    background-color: var(--couleur2);
+    min-height: 35px; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+td{
+    min-width: 150px;
+    border : 1px solid var(--couleur4);
+    padding: 10px;
+    background-color: #5c6268;
+}
+
+.categorie{
+    background-color: var(--couleur2);
+}
+
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--couleur4);
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: var(--couleur3);
+}
+
+.line{
+    height: 5px;
+    width: 100%;
+    background-color: var(--couleur2);
+    border-radius: 15px;
+    margin: 10px 0;
+}
+
+button{
+    background-color: var(--couleur3);
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px 8px;
+    color: var(--couleur4);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        min-height: 40px;
+        min-width: 200px;
+    }
+
+    button{
+        padding: 15px 25px;
+    }
+}

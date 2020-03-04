@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Meteo</title>
+        <script type ="text/javascript" src=script.js></script>
+        <link rel="stylesheet" href="custom.css">
+    </head>
+    <body>
+        <header>
+            <a class="active" href="#accueil">Accueil</a>
+            <a href="#contact">Contact</a>
+            <a href="#aide">Aide</a>
+        </header>
+        <main>
+            <h2>Météo du jour</h2>
+                <div class="search-bar">
+                    <input type="text" id="cityRequired" placeholder="Saisissez une ville">
+                    <button onclick="findIP()">Valider</button>
+                </div>
+                <div class="line"></div>
+                <table>
+                    <tr>
+                        <td class="categorie">Nom de la ville</td>
+                        <td><div id="city"></div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="categorie">Pays</td>
+                        <td><div id="country"></div></td>
+
+                    </tr>
+                    <tr>
+                        <td class="categorie">Météo</td>
+                        <td><div id="weather"></div></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="categorie">Température</td>
+                        <td><div id="temp"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="categorie">Pression</td>
+                        <td><div id='pressure'></div></td>
+                    </tr>
+                    <tr>
+                        <td class="categorie">Humidité</td>
+                        <td><div id="humidity"></div></td>
+
+                    </tr>
+                    <tr>
+                        <td class="categorie">Vitesse du vent</td>
+                        <td><div id="windSpeed"></div></td>
+                    </tr>
+            </table>
+        </main>
+        <footer></footer>   
+    </body>
+</html>
